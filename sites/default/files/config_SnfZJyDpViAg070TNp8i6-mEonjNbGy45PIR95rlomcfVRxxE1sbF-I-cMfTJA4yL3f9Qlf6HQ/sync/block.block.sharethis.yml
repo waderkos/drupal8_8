@@ -1,0 +1,28 @@
+uuid: cf3fa7fb-2c40-4aae-a14b-de77e8adc628
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - sharethis_block
+  theme:
+    - bartik
+id: sharethis
+theme: bartik
+region: primary_menu
+weight: 0
+provider: null
+plugin: sharethis
+settings:
+  id: sharethis
+  label: sharethis
+  provider: sharethis_block
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      test: test
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
